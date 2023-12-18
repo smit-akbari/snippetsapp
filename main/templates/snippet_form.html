@@ -1,0 +1,11 @@
+<form method="post" action="{% url 'snippet_form' %}">
+    {% csrf_token %}
+    <label for="code">Code:</label><br>
+    <textarea id="code" name="code"></textarea><br>
+    <label for="language">Language:</label><br>
+    <input type="text" id="language" name="language"><br>
+    <input type="checkbox" id="linenos" name="linenos">
+    <label for="linenos">Display Line Numbers</label><br>
+    <input type="submit" value="Submit">
+  </form>
+  
